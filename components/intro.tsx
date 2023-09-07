@@ -8,9 +8,13 @@ import { BsArrowRight } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 
+import { useSectionInView } from '@/lib/hooks';
+
 export default function Intro() {
+    const { ref } = useSectionInView('Home', 0.5);
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
         <div className="flex flex-col items-center justify-center ">
             <div className="relative">
                 <motion.div
@@ -48,6 +52,8 @@ export default function Intro() {
                     👋
                 </motion.span>
             </div>
+        </div>
+            
             <motion.h1 className='mb-10 mt-4 px-4 text-2xl 
             font-normal !leading-[1.5] 
             sm:text-4xl'
@@ -74,7 +80,7 @@ export default function Intro() {
                 Contact Me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/> 
                 </Link>
                 <a className='bg-white p-4 text-gray-700
-                flex items-center gap-2 rounded-full focus:scale-[1.15] hover:text-gray-950 active:scale-105
+                flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
                 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60'
                 href="https://linkedin.com/in/jlotten" target="_blank">
                     <BsLinkedin />
@@ -88,8 +94,6 @@ export default function Intro() {
                 </a>
                 
             </motion.div>
-            
-        </div>
     </section>
   )
 }
