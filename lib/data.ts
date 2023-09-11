@@ -1,5 +1,5 @@
 import React from "react";
-import codersboostImg from "@/public/Codersboost.png";
+import codersboostImg from "@/public/codersboost.png";
 import githubgalleryImg from "@/public/githubrepogallery.png";
 import guessthewordImg from "@/public/guessthewordgame.png";
 import stickynotesImg from "@/public/stickynotes.png";
