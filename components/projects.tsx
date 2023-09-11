@@ -17,7 +17,7 @@ export default function Projects() {
             {
                 projectsData.map((project, index) => (
                     <React.Fragment key={index}>    
-                    <Project  {...project} />
+                    <Project  {...project} onClick={() => window.open(project.url, '_blank')}/>
                     </React.Fragment>
             ))}
         </div>
