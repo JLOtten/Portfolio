@@ -1,4 +1,5 @@
 //add this to data.ts file if you want to add an experience section to your portfolio
+import React from 'react';
 
 export const experiencesData = [
     {
@@ -34,13 +35,6 @@ export const experiencesData = [
       date: "Aug 2008-Aug 2022",
     },
   ] as const;
-
-
-  // add this to the data.ts file under the links array if you want to add an experience section to your portfolio
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
 
   //add these imports to data.ts if you want to add the experience section to your portfolio
 import { CgWorkAlt } from "react-icons/cg";

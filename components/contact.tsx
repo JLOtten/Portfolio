@@ -42,10 +42,9 @@ export default function Contact() {
                 const { data, error } = await sendEmail(formData);
 
                 if (error) {
-                    toast.error(error);
+                    toast.error(error.toString());
                     return;
                 }
-
                     toast.success("Email sent successfully!");
                 }}
         >
