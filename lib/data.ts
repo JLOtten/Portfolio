@@ -28,13 +28,20 @@ export const links = [
   },
 ] as const;
 
-
 export const projectsData = [
   {
     title: "Coder's Boost",
     description:
       "A full-stack responsive web app that uses AI to generate encouragements and images for aspiring coders.",
-    tags: ["Python", "JavaScript", "Bootstrap", "DALL-E 2", "OpenAI API", "SQL", "OAuth"],
+    tags: [
+      "Python",
+      "JavaScript",
+      "Bootstrap",
+      "DALL-E 2",
+      "OpenAI API",
+      "SQL",
+      "OAuth",
+    ],
     imageUrl: codersboostImg,
     url: "https://codersboost.com/",
   },
@@ -44,7 +51,7 @@ export const projectsData = [
       "A complete case study (using a prototype), that allows users to log and easily export a vaccine record for a user and their family.",
     tags: ["Prototyping", "Wireframing", "UX Research", "Figma"],
     imageUrl: vaccinemanagerImg,
-    url:"https://www.figma.com/proto/yFxHCoy9zMpXZ9kqC4u59a/Vaccine-Manager?node-id=78-377&starting-point-node-id=78%3A377&scaling=scale-down&mode=design&t=trXycMAazTZo2r6L-1",
+    url: "https://www.figma.com/proto/yFxHCoy9zMpXZ9kqC4u59a/Vaccine-Manager?node-id=78-377&starting-point-node-id=78%3A377&scaling=scale-down&mode=design&t=trXycMAazTZo2r6L-1",
   },
   {
     title: "GitHub Repo Gallery",
@@ -52,7 +59,7 @@ export const projectsData = [
       "A gallery for my GitHub Repos that is searchable, dynamic and easy to use.",
     tags: ["JavaScript", "Responsiveness", "GitHub API", "HTML5", "CSS3"],
     imageUrl: githubgalleryImg,
-    url:"https://jlotten.github.io/github-repo-gallery-main/",
+    url: "https://jlotten.github.io/github-repo-gallery-main/",
   },
   {
     title: "Guess the Word Game",
@@ -95,5 +102,4 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Flask/Jinja",
-  
 ] as const;
