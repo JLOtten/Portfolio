@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
 
       <p className="mb-3">
-        I'm a fun and curious learner with a background in{" "}
+        I'm a curious life-long learner with a background in{" "}
         <span className="font-medium">Education</span>. I enjoyed over 10 years
         teaching high school, elementary and adults the subjects of math,
         science and English as a Second Language. As a parent during pandemic
