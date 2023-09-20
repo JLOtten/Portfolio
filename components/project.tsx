@@ -6,7 +6,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import { on } from "events";
 
-type ProjectProps = (typeof projectsData)[number] & { onClick: () => void };
+type ProjectProps = (typeof projectsData)[number] & { onClick: () => void;};
 
 export default function Project({
   title,
@@ -55,7 +55,7 @@ export default function Project({
           </h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
+            {tags?.map((tag: string, index: number) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] 
                 uppercase tracking-wider text-white rounded-full"

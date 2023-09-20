@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/linkedinpic.jpg"
+              src="/compressed-linkedin-pic.jpg"
               alt="Portrait of Jenna Otten"
               width="192"
               height="192"
@@ -66,7 +66,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi, <span className="font-bold">I'm Jenna.</span> I'm a{" "}
+        Hi, <span className="font-bold">I'm Jenna Otten.</span> I'm a{" "}
         <span className="font-bold">Front-end developer</span> with a focus on
         <span className="font-medium">{" "}UI/UX design</span>. I love to build{" "}
         <span className="font-medium">accessible</span> and{" "}
@@ -103,6 +103,7 @@ export default function Intro() {
                 transition cursor-pointer borderBlack"
           href="https://linkedin.com/in/jlotten"
           target="_blank"
+          aria-label="LinkedIn profile"
         >
           <BsLinkedin />
         </a>
@@ -113,6 +114,7 @@ export default function Intro() {
                 transition cursor-pointer borderBlack"
           href="https://github.com/JLOtten"
           target="_blank"
+          aria-label="GitHub profile"
         >
           <FaGithubSquare />
         </a>
