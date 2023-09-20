@@ -48,10 +48,10 @@ export const projectsData = [
   {
     title: "My Vaccine Manager",
     description:
-      "A complete case study (using a prototype), that allows users to log and easily export a vaccine record for a user and their family.",
+      "A complete UX case study (including a prototype), that allows users to log and easily export a vaccine record for a user and their family.",
     tags: ["Prototyping", "Wireframing", "UX Research", "Figma"],
     imageUrl: vaccinemanagerImg,
-    url: "https://www.figma.com/proto/yFxHCoy9zMpXZ9kqC4u59a/Vaccine-Manager?node-id=78-377&starting-point-node-id=78%3A377&scaling=scale-down&mode=design&t=trXycMAazTZo2r6L-1",
+    url: "https://docs.google.com/presentation/d/1Z25t69QKy7027zVWrYj2u79Ln89kz1jd9YaOO4Nyh7Q/edit?usp=sharing",
   },
   {
     title: "GitHub Repo Gallery",
@@ -75,7 +75,7 @@ export const projectsData = [
       "A react app that allows users to create digital sticky notes that are filtered by a search of the title or description.",
     tags: ["React", "JSX", "Props", "Components"],
     imageUrl: stickynotesImg,
-    url: "https://codesandbox.io/s/sticky-note-app-forked-3n32nf",
+    url: "https://csb-3n32nf-7grkiqtfg-jlotten.vercel.app/",
   },
 ] as const;
 

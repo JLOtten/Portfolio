@@ -67,8 +67,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         Hi, <span className="font-bold">I'm Jenna.</span> I'm a{" "}
-        <span className="font-bold">UX engineer</span> with a focus on
-        front-end. I love to build{" "}
+        <span className="font-bold">Front-end developer</span> with a focus on
+        <span className="font-medium">{" "}UI/UX design</span>. I love to build{" "}
         <span className="font-medium">accessible</span> and{" "}
         <span className="font-medium">responsive</span> web experiences.
       </motion.h1>
