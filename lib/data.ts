@@ -62,8 +62,7 @@ export const projectsData = [
   },
   {
     title: "Sticky Notes App",
-    description:
-      "A react app that allows users to add, edit, search for and delete digital sticky notes. Data for the notes is stored in local storage.",
+    description: "A React app that allows users to add, edit, search for and delete digital sticky notes. Data for the notes is stored in local storage.",
     imageUrl: stickynotesImg,
     tags: ["JSX", "ES6", "React", "DOM Manipulation", "Local Storage"],
     url: "https://csb-3n32nf-7grkiqtfg-jlotten.vercel.app/",
