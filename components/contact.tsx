@@ -49,7 +49,11 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
+        <label htmlFor="senderEmail" className="sr-only">
+          Your email
+        </label>
         <input
+          id="senderEmail"
           className="h-14 px-4 rounded-lg borderBlack"
           name="senderEmail"
           type="email"
@@ -57,7 +61,11 @@ export default function Contact() {
           maxLength={500}
           placeholder="Your email"
         />
+        <label htmlFor="message" className="sr-only">
+          Your message
+        </label>
         <textarea
+          id="message"
           className="h-52 my-3 rounded-lg borderBlack p-4"
           name="message"
           placeholder="Your message"

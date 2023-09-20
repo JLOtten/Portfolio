@@ -19,17 +19,17 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
 
-      <p className="mb-3">
+      <p className="mb-3 text-left" style={{ textIndent: "1.5em" }}>
         I'm a curious life-long learner with a background in{" "}
         <span className="font-medium">Education</span>. I enjoyed over 10 years
         teaching high school, elementary and adults the subjects of math,
-        science and English as a Second Language. As a parent during pandemic
-        distance learning, I had some great user experiences with ed. tech. I
+        science and English as a second language. As a parent during pandemic
+        distance learning, I had some great user experiences with education technology. I
         was inspired to use many of those applications in my own classroom when
         we returned to in-person learning.
       </p>
 
-      <p>
+      <p className="text-left" style={{ textIndent: "1.5em" }}>
         I made a <span className="italic">brave</span> choice to enroll in a
         bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>. Through

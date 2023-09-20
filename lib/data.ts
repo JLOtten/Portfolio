@@ -1,9 +1,9 @@
 import React from "react";
-import codersboostImg from "@/public/codersboost.png";
-import githubgalleryImg from "@/public/githubrepogallery.png";
-import guessthewordImg from "@/public/guessthewordgame.png";
-import stickynotesImg from "@/public/stickynotes.png";
-import vaccinemanagerImg from "@/public/vaccinemanager.png";
+import codersboostImg from "@/public/compressed-codersboost.png";
+import githubgalleryImg from "@/public/compressed-githubrepogallery.png";
+import guessthewordImg from "@/public/compressed-guess-the-word-game.png";
+import stickynotesImg from "@/public/compressed-stickynotes.png";
+import vaccinemanagerImg from "@/public/compressed-vaccinemanager.png";
 
 export const links = [
   {
@@ -32,16 +32,8 @@ export const projectsData = [
   {
     title: "Coder's Boost",
     description:
-      "A full-stack responsive web app that uses AI to generate encouragements and images for aspiring coders.",
-    tags: [
-      "Python",
-      "JavaScript",
-      "Bootstrap",
-      "DALL-E 2",
-      "OpenAI API",
-      "SQL",
-      "OAuth",
-    ],
+      "A full-stack responsive web app that filters a SQL database of AI-generated encouragements for aspiring coders. ",
+    tags: ["Python", "JavaScript", "Bootstrap", "DALL-E 2", "OpenAI API", "SQL", "OAuth",],
     imageUrl: codersboostImg,
     url: "https://codersboost.com/",
   },
@@ -56,7 +48,7 @@ export const projectsData = [
   {
     title: "GitHub Repo Gallery",
     description:
-      "A gallery for my GitHub Repos that is searchable, dynamic and easy to use.",
+      "A gallery for each of my GitHub Repos (using GitHub's API) that is searchable, dynamic and easy to use.",
     tags: ["JavaScript", "Responsiveness", "GitHub API", "HTML5", "CSS3"],
     imageUrl: githubgalleryImg,
     url: "https://jlotten.github.io/github-repo-gallery-main/",
@@ -72,9 +64,9 @@ export const projectsData = [
   {
     title: "Sticky Notes App",
     description:
-      "A react app that allows users to create digital sticky notes that are filtered by a search of the title or description.",
-    tags: ["React", "JSX", "Props", "Components"],
+      "A react app that allows users to add, edit, search for and delete digital sticky notes. Data for the notes is stored in local storage.",
     imageUrl: stickynotesImg,
+    tags: ["JSX", "ES6", "React", "DOM Manipulation", "Local Storage"],
     url: "https://csb-3n32nf-7grkiqtfg-jlotten.vercel.app/",
   },
 ] as const;
@@ -87,7 +79,7 @@ export const skillsData = [
   "TypeScript",
   "Next.js",
   "Rest API",
-  "Git/Github",
+  "Git/GitHub",
   "Tailwind",
   "Framer Motion",
   "Adobe XD",
