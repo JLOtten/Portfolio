@@ -25,7 +25,7 @@ export default function Project({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const handleClick = () => {
-    window.open(url);
+    window.location.href = url;
   };
 
   return (
