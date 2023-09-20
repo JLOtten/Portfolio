@@ -75,7 +75,7 @@ export const projectsData = [
       "A react app that allows users to create digital sticky notes that are filtered by a search of the title or description.",
     tags: ["React", "JSX", "Props", "Components"],
     imageUrl: stickynotesImg,
-    url: "https://3n32nf.csb.app/",
+    url: "https://csb-3n32nf-7grkiqtfg-jlotten.vercel.app/",
   },
 ] as const;
 
