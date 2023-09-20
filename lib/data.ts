@@ -55,8 +55,7 @@ export const projectsData = [
   },
   {
     title: "Guess the Word Game",
-    description:
-      "A fun interactive web app for playing a game to guess a word that is selected from an API.",
+    description:"An engaging web-based game where users are tasked with guessing a word selected from an API, with a limited number of guesses available.",
     tags: ["JavaScript", "DOM Manipulation", "GitHub", "API"],
     imageUrl: guessthewordImg,
     url: "https://jlotten.github.io/guess-the-word/",

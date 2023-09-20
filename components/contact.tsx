@@ -7,9 +7,26 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import { toast } from "react-hot-toast";
 import SubmitBtn from "./submit-btn";
+import { useState } from "react";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const { data, error } = await sendEmail(formData);
+  
+    if (error) {
+      toast.error(error.toString());
+      return;
+    }
+  
+    toast.success("Email sent successfully!");
+    setFormSubmitted(true);
+  };
 
   return (
     <motion.section
@@ -31,24 +48,33 @@ export default function Contact() {
     >
       <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700 -mt-6">
-        Please contact me directly at{" "}
+        {formSubmitted
+        ? "Thank you for your message! I will get back to you as soon as possible from: "
+        : "Please contact me directly at "}
         <a className="underline" href="mailto:jenna.otten@gmail.com">
           jenna.otten@gmail.com
         </a>{" "}
-        or through the form below.
+        {formSubmitted ? null : "or through the form below."}
       </p>
       <form
         className="mt-10 flex flex-col"
-        action={async (formData) => {
+        onSubmit={async (event) => {
+          event.preventDefault();
+          const formData = new FormData(event.currentTarget);
           const { data, error } = await sendEmail(formData);
 
           if (error) {
             toast.error(error.toString());
             return;
           }
+
           toast.success("Email sent successfully!");
+          setFormSubmitted(true);
         }}
+       
       >
+        {!formSubmitted && (
+    <>
         <label htmlFor="senderEmail" className="sr-only">
           Your email
         </label>
@@ -73,6 +99,8 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
+        </>
+        )}
       </form>
     </motion.section>
   );

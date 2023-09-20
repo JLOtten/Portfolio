@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/linkedinpic.jpg"
+              src="/compressed-linkedin-pic.jpg"
               alt="Portrait of Jenna Otten"
               width="192"
               height="192"
@@ -103,6 +103,7 @@ export default function Intro() {
                 transition cursor-pointer borderBlack"
           href="https://linkedin.com/in/jlotten"
           target="_blank"
+          aria-label="LinkedIn profile"
         >
           <BsLinkedin />
         </a>
@@ -113,6 +114,7 @@ export default function Intro() {
                 transition cursor-pointer borderBlack"
           href="https://github.com/JLOtten"
           target="_blank"
+          aria-label="GitHub profile"
         >
           <FaGithubSquare />
         </a>
