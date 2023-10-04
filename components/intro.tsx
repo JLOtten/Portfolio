@@ -54,7 +54,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋
+            
           </motion.span>
         </div>
       </div>
@@ -66,11 +66,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi, <span className="font-bold">I'm Jenna Otten.</span> I'm a{" "}
-        <span className="font-bold">Front-end developer</span> with a focus on
-        <span className="font-medium">{" "}UI/UX design</span>. I love to build{" "}
-        <span className="font-medium">accessible</span> and{" "}
-        <span className="font-medium">responsive</span> web experiences.
+       <div>
+          <span className="font-bold">Jenna Otten</span>
+          <br />
+          <span className="font-medium">Front-end Developer</span>
+        </div>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row 
