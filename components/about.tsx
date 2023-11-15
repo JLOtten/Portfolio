@@ -20,12 +20,13 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
 
       <p className="mb-3 text-left" style={{ textIndent: "1.5em" }}>
+
        Hi, I'm Jenna! I’m a <span className="font-medium">Software Engineer</span> focusing on frontend development, 
        with a background in education and specializing in accessible and responsive web apps. In my prior career 
        I enjoyed teaching math, science, and English as a second language to students from age 5 to 65. 
        I'm bringing effective communication, collaboration skills and ability to break down problems to any team that I join.
       </p>
-
+        
       <p className="mb-3 text-left" style={{ textIndent: "1.5em" }}>
        During the pandemic, I discovered a passion for educational technology (as both a teacher and a parent) 
        and decided to pursue software engineering. I completed a <span className="">software engineering 
