@@ -24,13 +24,13 @@ export default function About() {
        Hi, I'm Jenna! I’m a <span className="font-medium">Software Engineer</span> focusing on frontend development, 
        with a background in education and specializing in accessible and responsive web apps. In my prior career 
        I enjoyed teaching math, science, and English as a second language to students from age 5 to 65. 
-       I'm bringing effective communication, collaboration skills and ability to break down problems to any team that I join.
+       I'm bringing effective communication, collaboration skills and an ability to break down problems to any team that I join.
       </p>
         
       <p className="mb-3 text-left" style={{ textIndent: "1.5em" }}>
        During the pandemic, I discovered a passion for educational technology (as both a teacher and a parent) 
-       and decided to pursue software engineering. I completed a <span className="">software engineering 
-       bootcamp, obtained a Google UX Design Certification,</span> and enhanced my skills in {" "}
+       and decided to pursue software engineering. I completed a full-stack software engineering
+       bootcamp, obtained a Google UX Design Certification, and enhanced my skills in {" "}
        <span className="underline">JavaScript, HTML, CSS, Python, PostgreSQL and React</span> while using tools like
        {" "}<span className="underline">Git & GitHub, VS Code, Figma, Adobe XD</span> and more. I'm dedicated to designing, 
        building and improving technology to simplify the lives of everyone, and
@@ -40,7 +40,7 @@ export default function About() {
       <p className="text-left" style={{ textIndent: "1.5em"}}>
       When I'm not learning new technologies or coding, I'm likely walking my dogs
       or cheering at my kids' sports events. I am currently looking for a 
-      full-time position as a Front-end or Full-Stack Developer.
+      full-time position as a frontend or full-stack developer.
       </p>
     </motion.section>
   );
